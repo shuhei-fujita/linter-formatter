@@ -45,3 +45,10 @@ pre-commit:
       - '*.ts'
     command: biome format --write .
     concurrent: true
+  biome-lint:
+    glob:
+      - '*.js'
+      - '*.json'
+      - '*.ts'
+    command: biome lint .
+    concurrent: true
